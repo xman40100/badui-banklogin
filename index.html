@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your general banking website</title>
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="loggingin" class="message">
+            <div class="window" style="width: 300px; position: fixed; top: 50%; left: 38%;">
+                <div class="title-bar">
+                    <div class="title-bar-text">Logging In</div>
+                </div>
+                <div class="window-body">
+                    <img width="32" height="32" src="images/logging.gif" alt="logging in">
+                    Please wait while we log you in!
+                </div>
+            </div>
+        </div>
+        <div id="msie6" class="message">
+            <div class="window" style="width: 300px; position: fixed; top: 50%; left: 38%;">
+                <div class="title-bar">
+                    <div class="title-bar-text">Microsoft recommends Internet Explorer</div>
+                    <div class="title-bar-controls">
+                        <button id="closeMsg" aria-label="Close"></button>
+                      </div>
+                </div>
+                <div class="window-body">
+                    <img width="32" height="32" src="images/ie6.webp" alt="internet explorer 6">
+                    Microsoft recommends the fast and secure Internet Explorer to use the website. You can be open to malicious attacks if you don't use the right browser!
+                </div>
+            </div>
+        </div>
+        <table width="40%">
+            <tbody>
+                <tr>
+                    <td class="centered" width="15%">Bank Login Program</td>
+                    <td class="centered" width="15%">
+                        <a href="https://jdan.github.io/98.css/">About</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th width="50%"></th>
+                    <th width="50%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="centered" width="50%">
+                        <form id="formMain">
+                            <h3>Log in</h3>
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" minlength="5" required id="username" /><br/><br/>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" readonly minlength="5" required id="password" /><br/>
+                            <br/>
+                            <button type="submit">Log in</button><br/><br/>
+                            <a href="#">Have you forgotten your password?</a><br/>
+                        </form>
+                        <p>Works best on: <span class="ieicon"><img width="16" height="16" src="images/ie6.webp" alt="internet explorer 6"></span></p>
+                    </td>
+                    <td id="keypadarea" class="centered" width="50%">
+                        <button class="keypadbtn">1</button>
+                        <button class="keypadbtn">2</button>
+                        <button class="keypadbtn">3</button>
+                        <button class="keypadbtn">4</button>
+                        <button class="keypadbtn">5</button>
+                        <button class="keypadbtn">6</button>
+                        <button class="keypadbtn">7</button>
+                        <button class="keypadbtn">8</button>
+                        <button class="keypadbtn">9</button>
+                        <button class="keypadbtn">0</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="centered">
+            &copy; <span class="year"></span> Bank Login Program - v7.5 october 2004
+        </footer>
+        <div id="app">
+        </div>
+    </body>
+    <script src="index.js"></script>
+    <audio src="sounds/login.m4a" id="loginaudio"></audio>
+</html>

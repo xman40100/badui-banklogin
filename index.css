@@ -1,0 +1,32 @@
+html {
+    background-color: rgb(194, 194, 194);
+}
+
+body {
+    margin: 0;
+    font-family: 'Pixelated MS Sans Serif';
+}
+
+.centered {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.message {
+    margin: 0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #00000050;
+}
